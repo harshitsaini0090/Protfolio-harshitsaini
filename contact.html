@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Harshit Saini</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="contact-container">
+    <h1>📬 Contact Me</h1>
+
+    <form action="https://formspree.io/f/mvgrneqz" method="POST">
+      <input type="text" name="Name" placeholder="Your Name" required class="input-animate"/>
+      <input type="email" name="Email" placeholder="Your Email" required class="input-animate"/>
+      <input type="text" name="Phone" placeholder="Contact Number" required class="input-animate"/>
+      <textarea name="Message" rows="5" placeholder="Your Message..." required class="input-animate"></textarea>
+
+      <!-- Redirect to thankyou page after submission -->
+      <input type="hidden" name="_redirect" value="thnx.html" />
+
+      <button type="submit" id="sendBtn">Send Message</button>
+    </form>
+  </div>
+
+</body>
+</html>

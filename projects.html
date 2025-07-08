@@ -1,0 +1,85 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harshit Saini - Projects</title>
+  <meta name="description" content="Explore digital marketing projects by Harshit Saini, including Google Ads, Meta Ads, and SEO success stories." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-mode">
+  <!-- 🌐 Navigation -->
+  <header style="background: #111; padding: 10px 20px; text-align: center;">
+  <nav>
+    <a href="index.html" style="margin: 0 15px; color: #fff; text-decoration: none;">Home</a>
+    <a href="projects.html" style="margin: 0 15px; color: #fff; text-decoration: none;">Projects</a>
+    <a href="about.html" style="margin: 0 15px; color: #fff; text-decoration: none;">About</a>
+    <a href="contact.html" style="margin: 0 15px; color: #fff; text-decoration: none;">Contact</a>
+    <button id="darkModeToggle" style="margin-left: 15px; padding: 4px 10px; background: #222; color: #fff; border: none; border-radius: 4px; cursor: pointer;">🌗</button>
+  </nav>
+</header>
+  
+  < <!-- 💼 Projects Section -->  <main class="container" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding-top: 40px;">
+  <div class="section-header" style="margin-bottom: 40px;">
+    <h1>💼 My Projects</h1>
+    <p>Explore my latest digital marketing projects that delivered results using Google Ads, Meta Ads, and SEO strategies.</p>
+  </div>  <div class="grid" style="display: grid; grid-template-columns: 1fr; gap: 40px; max-width: 700px; width: 100%;">
+    <style>
+      .card {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s ease;
+      }
+      .card.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const cards = document.querySelectorAll('.card');
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });cards.forEach(card => {
+      observer.observe(card);
+    });
+  });
+</script>
+<div class="card">
+  <img src="gooagl.jpg" alt="Google Ads" />
+  <h2>SMM projects</h2>
+<p>Instagram Growth for Russian University
+Gained 1M+ reach in 30 days using strategic content, reels, and student influencer marketing.
+SMM, Instagram Marketing</p>  
+  <span>Google Ads, Analytics</span><br />
+  <a href="#" class="cta-button">More Details</a>
+</div>
+
+<div class="card">
+  <img src="meta.jpg" alt="Meta Ads" />
+  <h2>Meta Ad</h2>
+  <p>Generated 750+ leads for multiple Ed-tech brand and multiple IT brands using Facebook & Instagram ads</p>
+  <span>Meta Ads, Pixel</span><br />
+  <a href="#" class="cta-button">More Details</a>
+</div>
+
+<div class="card">
+  <img src="sos.jpg" alt="SEO Project" />
+  <h2>SEO for Local Business</h2>
+  <p>Managed 4 SEO projects simultaneously and achieved
+more than 10k website traffic for an
+Ed-Tech brand. SelfUpGrad.</p>
+  <span>SEO, Google My Business</span><br />
+  <a href="#" class="cta-button">More Details</a>
+</div>
+
+  </div>
+</main>  
+<script src=<"script.js"></script>
+
+</body>
+</html>

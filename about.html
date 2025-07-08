@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Harshit Saini</title>
+  <link rel="stylesheet" href="style.css" />
+<style>
+  body.dark-mode {
+    background-color: #111;
+    color: #eee;
+  }
+  body.dark-mode header {
+    background-color: #000;
+  }
+  body.dark-mode .skills span,
+  body.dark-mode .certs p {
+    color: #ddd;
+  }
+</style>
+</head>
+<body class="dark-mode">
+
+  <header style="background: #111; padding: 10px 20px; text-align: center;">
+    <nav>
+      <a href="index.html" style="margin: 0 15px; color: #fff; text-decoration: none;">Home</a>
+      <a href="projects.html" style="margin: 0 15px; color: #fff; text-decoration: none;">Projects</a>
+      <a href="about.html" style="margin: 0 15px; color: #fff; text-decoration: none;">About</a>
+      <a href="contact.html" style="margin: 0 15px; color: #fff; text-decoration: none;">Contact</a>
+      <button id="darkModeToggle" style="margin-left: 15px; padding: 4px 10px; background: #222; color: #fff; border: none; border-radius: 4px; cursor: pointer;">🌗</button>
+    </nav>
+  </header>
+
+  <main class="container" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 40px 20px;">
+  <h1 style="font-size: 2.2rem; margin-bottom: 20px;">👋 About Me</h1>
+
+  <div class="profile">
+    <img src="radha.jpg" alt="Harshit Saini" style="width: 140px; height: 140px; border-radius: 50%; border: 4px solid #000; object-fit: cover; margin-bottom: 20px;" />
+  </div>
+
+  <p style="max-width: 700px; margin-bottom: 30px;">
+    I'm <strong>Harshit Saini</strong>, a passionate <strong>Digital Marketing Specialist google and</strong> meta Certified .<p>I’m a passionate Digital Marketer with experience in SEO, Meta Ads, and Social Media Management. I've worked with platforms like Techmier, SelfUpGrad, and NewGen University Russia Bangla Biswa a Kolkata Based clothing Brand to craft effective marketing strategies and optimize campaigns using tools like Google Analytics, Semrush, and MailChimp.</p>
+  
+
+  <section style="margin-top: 30px; width: 100%; max-width: 700px;">
+    <h2>🧠 Skills & Tools</h2>
+    <div class="skills" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 10px;">
+      <span>SEO</span>
+      <span>Google Ads</span>
+      <span>Meta Ads</span>
+      <span>Google Analytics</span>
+      <span>Content Strategy</span>
+      <span>Keyword Research</span>
+    </div>
+  </section>
+
+<section style="margin-top: 40px; width: 100%; max-width: 700px;">
+  <h2>📜 Certifications</h2>
+
+  <div class="certs">
+    <div class="cert-card">
+      <img src="googal add.jpg" alt="Google Certification" onclick="openImage(this.src)" />
+      <p>Google Ads Certified</p>
+    </div>
+    <div class="cert-card">
+      <img src="google cartifica.jpg" alt="Google Certification" onclick="openImage(this.src)" />
+      <p>Google Certificate</p>
+    </div>
+  <div class="cert-card">
+      <img src="Canva.jpg" alt="canva Certification" onclick="openImage(this.src)" />
+      <p>Canva Certification</p>
+    </div>
+  <div class="cert-card">
+      <img src="chatgpt.jpg" alt="ChatGPT Certification" onclick="openImage(this.src)" />
+      <p>AI certification</p>
+    </div>
+
+</section>
+
+<section style="margin-top: 50px; width: 100%; max-width: 700px; text-align: center;">
+  <h2 style="font-size: 1.8rem; color: #00ffcc; animation: fadeDown 1s ease;">🎨 My Creative Work</h2>
+  
+  <a href="https://www.behance.net/harshitsaini37" target="_blank" class="behance-link">
+    <img src="https://cdn-icons-png.flaticon.com/512/145/145799.png" alt="Behance Logo" class="behance-icon" />
+    <span>View my design portfolio on Behance</span>
+  </a>
+</section>
+
+<!-- 👇 Popup Full Image -->
+<div id="imagePopup" class="image-popup" onclick="closeImage()">
+  <img id="popupImg" />
+</div>
+</main>
+<script>
+  function openImage(src) {
+    document.getElementById("popupImg").src = src;
+    document.getElementById("imagePopup").style.display = "flex";
+  }
+
+  function closeImage() {
+    document.getElementById("imagePopup").style.display = "none";
+  }
+</script>
+
+
+</body>
+</html>
+
+
